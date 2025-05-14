@@ -1,0 +1,19 @@
+.side-card {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    box-sizing: border-box;
+    margin: 0;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

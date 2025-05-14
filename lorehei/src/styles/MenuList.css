@@ -1,0 +1,29 @@
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.list-item {
+    cursor: pointer;
+}
+
+.list-item:hover {
+    backdrop-filter: blur(0);
+    background-color: transparent;
+}
+
+ul {
+    text-align: center;
+    font-size: clamp(20px, 1vw, 100px);
+}
+
+li {
+    font-weight: bold;
+    border: none;
+    margin: 0;
+    outline: none;
+    line-height: 3;
+}

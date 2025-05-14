@@ -1,0 +1,58 @@
+.main-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    margin: 0;
+}
+
+.upper-container {
+    padding: 5%;
+}
+
+img {
+    width: clamp(100px, 6vw, 100px);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img-row {
+    padding-top: 4%;
+}
+
+.list-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.meditation-row {
+    height: 100%;
+    max-height: 100px;
+    padding: 5%;
+}
+
+.meditation-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chaosphere {
+    text-align: center;
+    width: 100%;
+    max-width: 60px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
