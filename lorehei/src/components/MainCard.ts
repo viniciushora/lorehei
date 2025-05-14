@@ -12,11 +12,13 @@ export default defineComponent({
   components: {
     MenuList
   },
-  setup() {
+  emits: ['itemSelected'],
+  setup(_, { emit }) {
     const { moveMainCardToTopOnce } = useMainCardPosition()
 
     function itemClick(item: Item) {
       moveMainCardToTopOnce()
+      emit('itemSelected', item.id)
     }
 
     return {

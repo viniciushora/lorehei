@@ -1,9 +1,24 @@
-<template>
-    <div class="container-fluid side-card">
-        
-    </div>
-</template>
+<script setup lang="ts">
 
-<script lang="ts" src="@/components/SideCard.ts"></script>
+defineProps<{
+    title: string
+    content: string
+    image: string | null,
+    textAlign: string,
+    onImageClick: (src: string) => void
+}>()
+</script>
+
+<template>
+  <div class="side-card">
+    <h1>{{ title }}</h1>
+
+    <div class="image-wrapper" v-if="image" @click="onImageClick(image)">
+        <img :src="image" class="clickable-img" />
+    </div>
+
+    <p v-html="content" :style="{ textAlign: textAlign }"></p>
+  </div>
+</template>
 
 <style scoped src="@/styles/SideCard.css"></style>

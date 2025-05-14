@@ -1,5 +1,16 @@
-import { defineComponent } from 'vue'
+import { PropType } from 'vue'
 
-export default defineComponent({
-  name: 'SideCard'
-})
+export const useCardProps = {
+  title: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String as PropType<string | null>,
+    default: null,
+  },
+  content: {
+    type: String,
+    required: true,
+  },
+}

@@ -19,7 +19,7 @@
                 <div class="row img-row">
                     <div class="col-md-2"/>
                     <div class="col-md-8 center-text">
-                        <img src="../assets/lorehei.png" alt="lorehei" class="img-fluid"/>
+                        <img src="/lorehei.png" alt="lorehei" class="img-fluid"/>
                     </div>
                     <div class="col-md-2"/>
                 </div>
