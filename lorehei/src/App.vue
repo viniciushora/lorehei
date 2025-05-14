@@ -28,7 +28,7 @@ function handleItemSelected(itemId: number) {
         Ela é uma excelente confidente, sempre disposta a conversar e oferecer conselhos. Sua energia tem o poder de elevar o estado de ânimo, proporcionando conforto e bem-estar. Além disso, pode ser evocada para favorecer a sorte em situações específicas ou em diferentes aspectos da vida.<br>
         De natureza amigável e suave, Lorehei não exige rituais complexos para ser evocada. Sua chamada pode ocorrer de maneira espontânea, a qualquer hora do dia e em qualquer lugar, tornando sua presença acessível sempre que desejado.<br>
       `,
-      image: '/public/lorehei.png',
+      image: '/lorehei/lorehei.png',
       textAlign: 'justify',
     },
     2: {
@@ -44,7 +44,7 @@ function handleItemSelected(itemId: number) {
         <b>Incensos</b>: Mirra a sândalo<br>
         <b>Cores</b>: Rosa, branco e vermelho<br>
       `,
-      image: '/lorehei.png',
+      image: '/lorehei/lorehei.png',
       textAlign: 'left',
     },
     3: {
@@ -55,7 +55,7 @@ function handleItemSelected(itemId: number) {
         <b>Número</b>: 49<br>
         <b>Sephiroth</b>: Tiphereth<br>
       `,
-      image: '/venus.png',
+      image: '/lorehei/venus.png',
       textAlign: 'left',
     },
     4: {
@@ -65,7 +65,7 @@ function handleItemSelected(itemId: number) {
         A percepção de sua presença pode variar de acordo com sua capacidade de visualização. Alguns poderão vê-la no ambiente, enquanto outros sentirão sua energia ou uma sutil presença ao redor. Caso não perceba nada, não se preocupe — seus efeitos ainda estarão em ação.<br>
         Durante sua interação, você pode fazer um pedido ou simplesmente continuar a visualização do sigilo, absorvendo sua influência positiva para o ânimo e o bem-estar.<br>
         Ao concluir, lembre-se de agradecer a Lorehei e conceder-lhe permissão para se retirar.`,
-      image: '/lorehei-sigilo.jpg',
+      image: '/lorehei/lorehei-sigilo.jpg',
       textAlign: 'justify', },
     5: {
       title: 'ALIMENTAÇÃO',
