@@ -59,7 +59,7 @@ h2 {
   flex-wrap: wrap;
   gap: 0.5%;
 }
-
+/* MODAL AMPLIAR IMAGEM */
 .modal-overlay {
   position: fixed;
   top: 0;

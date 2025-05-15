@@ -12,7 +12,7 @@ export default defineComponent({
   components: {
     MenuList
   },
-  emits: ['itemSelected'],
+  emits: ['itemSelected', 'chaosphereClick'],
   setup(_, { emit }) {
     const { moveMainCardToTopOnce } = useMainCardPosition()
 
@@ -21,8 +21,13 @@ export default defineComponent({
       emit('itemSelected', item.id)
     }
 
+    function chaosphereClicked() {
+      emit('chaosphereClick')
+    }
+
     return {
       itemClick,
+      chaosphereClicked,
       itens: [
         { id: 1, name: 'Descrição' },
         { id: 2, name: 'Características' },

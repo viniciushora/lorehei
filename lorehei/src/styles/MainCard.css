@@ -46,6 +46,7 @@ img {
     width: 100%;
     max-width: 60px;
     animation: spin 3s linear infinite;
+    cursor: pointer;
 }
 
 @keyframes spin {

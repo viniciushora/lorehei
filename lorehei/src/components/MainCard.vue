@@ -36,7 +36,11 @@
         </div>
         <div class="row meditation-row">
             <div class="col-md-12 meditation-col">
-                <img class="chaosphere" src="../assets/caosfera.png"/>
+                <img
+                    class="chaosphere"
+                    src="/caosfera.png"
+                    @click="chaosphereClicked"
+                />
             </div>
         </div>
     </div>

@@ -3,6 +3,8 @@ import { ref, watch } from 'vue'
 import MainCard from '@/components/MainCard.vue'
 import SideCard from '@/components/SideCard.vue'
 import { useMainCardPosition } from '@/stores/useMainCardPosition'
+import MeditationTool from '@/components/MeditationTool.vue'
+import { openModal } from '@/components/MeditationTool'
 
 const { isAtTop, animationDone, finishAnimation } = useMainCardPosition()
 
@@ -64,7 +66,7 @@ function handleItemSelected(itemId: number) {
         Para ativar Lorehei, basta acender um incenso de mirra ou sândalo e entrar em um estado alterado de consciência por meio da meditação ou qualquer técnica de gnose. Em seguida, visualize seu sigilo, que se encontra acima.<br>
         A percepção de sua presença pode variar de acordo com sua capacidade de visualização. Alguns poderão vê-la no ambiente, enquanto outros sentirão sua energia ou uma sutil presença ao redor. Caso não perceba nada, não se preocupe — seus efeitos ainda estarão em ação.<br>
         Durante sua interação, você pode fazer um pedido ou simplesmente continuar a visualização do sigilo, absorvendo sua influência positiva para o ânimo e o bem-estar.<br>
-        Ao concluir, lembre-se de agradecer a Lorehei e conceder-lhe permissão para se retirar.`,
+        Você também pode utilizar a ferramenta de meditação clicando na caosfera girando ao lado como forma simplificada de ativação.`,
       image: '/lorehei/lorehei-sigilo.jpg',
       textAlign: 'justify', },
     5: {
@@ -73,7 +75,7 @@ function handleItemSelected(itemId: number) {
         Lorehei se alimenta de estados de presença e gratidão. Sua energia é sustentada por momentos de conexão genuína, quando você se permite mergulhar no agora e reconhecer sua influência sutil em sua vida.<br>
         Para alimentá-la, acenda um incenso de mirra ou sândalo — aromas que purificam o ambiente e favorecem a elevação espiritual. Em seguida, entre em um estado alterado de consciência por meio da meditação, da respiração consciente ou de qualquer técnica de gnose que o aproxime de sua essência.<br>
         Visualize seu sigilo com clareza, como se ele brilhasse suavemente diante de você. Emane sentimentos de gratidão, serenidade e alegria, pois são essas emoções que nutrem Lorehei e fortalecem seu vínculo com você. A cada respiração profunda, permita que a presença dela se intensifique — seja por imagens, sensações ou uma paz inexplicável no ambiente.<br>
-        Você pode dizer em voz alta ou mentalmente palavras de agradecimento, ou apenas permanecer em silêncio, permitindo que o fluxo de energia se complete.<br>
+        Você também pode utilizar a ferramenta de meditação clicando na caosfera girando ao lado como forma simplificada de alimentação.<br>
       `,
       image: null,
       textAlign: 'justify',
@@ -109,6 +111,10 @@ function closeModal() {
   showImageModal.value = false
   modalImageSrc.value = null
 }
+
+function openChaosphereModal() {
+  openModal()
+}
 </script>
 
 <template>
@@ -116,7 +122,10 @@ function closeModal() {
     <div class="row">
       <div class="col-md-12">
         <div class="cards-container">
-          <MainCard @itemSelected="handleItemSelected" />
+          <MainCard
+            @itemSelected="handleItemSelected"
+            @chaosphereClick="openChaosphereModal"
+          />
           <SideCard
             v-if="showSideCard"
             :title="sideCardData.title"
@@ -132,5 +141,6 @@ function closeModal() {
       <img :src="modalImageSrc" class="modal-img" />
       <button class="close-button" @click="closeModal">×</button>
     </div>
+    <MeditationTool />
   </div>
 </template>
