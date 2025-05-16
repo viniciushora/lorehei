@@ -1,6 +1,6 @@
 .side-card {
-    width: 100%;
-    max-width: 600px;
+    width: 33vw;
+    max-width: 900px;
     height: auto;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.2);
@@ -20,7 +20,7 @@ h1 {
 }
 
 p {
-  font-size: clamp(18px, 0.7vw, 100px);
+  font-size: clamp(18.5px, 0.9vw, 30px);
 }
 
 .image-wrapper {
@@ -30,7 +30,7 @@ p {
 }
 
 img {
-  width: clamp(180px, 100vw, 100px);
+  width: clamp(100px, 100vw, 180px);
   object-fit: cover;
   border-radius: 2%;
   margin: 2%;

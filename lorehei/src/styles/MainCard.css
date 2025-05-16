@@ -1,6 +1,6 @@
 .main-card {
-    width: 100%;
-    max-width: 400px;
+    width: 21vw;
+    max-width: 640px;
     height: auto;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.2);
@@ -15,7 +15,7 @@
 }
 
 img {
-    width: clamp(100px, 6vw, 100px);
+    width: clamp(100px, 5.5vw, 160px);
     object-fit: cover;
     border-radius: 50%;
 }
@@ -32,19 +32,20 @@ img {
 .meditation-row {
     height: 100%;
     max-height: 100px;
-    padding: 5%;
+    padding: 12%;
 }
 
 .meditation-col {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .chaosphere {
     text-align: center;
-    width: 100%;
-    max-width: 60px;
+    width: 22%;
+    max-width: 100px;
     animation: spin 3s linear infinite;
     cursor: pointer;
 }
