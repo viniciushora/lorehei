@@ -1,23 +1,20 @@
 <script setup lang="ts">
+import { defineProps } from 'vue'
+import { useCardProps, useSideCard } from '@/logic/SideCard'
 
-defineProps<{
-    title: string
-    content: string
-    image: string | null,
-    textAlign: string,
-    onImageClick: (src: string) => void
-}>()
+const props = defineProps(useCardProps)
+const { handleClick, alignStyle } = useSideCard(props)
 </script>
 
 <template>
   <div class="side-card">
-    <h1>{{ title }}</h1>
+    <h1>{{ props.title }}</h1>
 
-    <div class="image-wrapper" v-if="image" @click="onImageClick(image)">
-        <img :src="image" class="clickable-img" />
+    <div class="image-wrapper" v-if="props.image" @click="handleClick">
+      <img :src="props.image" class="clickable-img" />
     </div>
 
-    <p v-html="content" :style="{ textAlign: textAlign }"></p>
+    <p v-html="props.content" :style="alignStyle"></p>
   </div>
 </template>
 

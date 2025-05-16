@@ -1,11 +1,7 @@
 import { defineComponent } from 'vue'
 import MenuList from '@/components/MenuList.vue'
 import { useMainCardPosition } from '@/stores/useMainCardPosition'
-
-interface Item {
-  id: number
-  name: string
-}
+import type { MainCardItem } from '@/models/MainCard'
 
 export default defineComponent({
   name: 'MainCard',
@@ -16,7 +12,7 @@ export default defineComponent({
   setup(_, { emit }) {
     const { moveMainCardToTopOnce } = useMainCardPosition()
 
-    function itemClick(item: Item) {
+    function itemClick(item: MainCardItem) {
       moveMainCardToTopOnce()
       emit('itemSelected', item.id)
     }
@@ -25,17 +21,19 @@ export default defineComponent({
       emit('chaosphereClick')
     }
 
+    const itens: MainCardItem[] = [
+      { id: 1, name: 'Descrição' },
+      { id: 2, name: 'Características' },
+      { id: 3, name: 'Arquétipos' },
+      { id: 4, name: 'Forma de Ativação' },
+      { id: 5, name: 'Alimentação' },
+      { id: 6, name: 'Banimento' },
+    ]
+
     return {
       itemClick,
       chaosphereClicked,
-      itens: [
-        { id: 1, name: 'Descrição' },
-        { id: 2, name: 'Características' },
-        { id: 3, name: 'Arquétipos' },
-        { id: 4, name: 'Forma de Ativação' },
-        { id: 5, name: 'Alimentação' },
-        { id: 6, name: 'Banimento' },
-      ] as Item[]
+      itens
     }
   }
 })

@@ -1,24 +1,20 @@
 import { defineComponent, PropType } from 'vue'
-
-interface Item {
-  id: number
-  name: string
-}
+import type { MenuListItem } from '@/models/MenuList'
 
 export default defineComponent({
   name: 'MenuList',
   props: {
     itens: {
-      type: Array as PropType<Item[]>,
+      type: Array as PropType<MenuListItem[]>,
       required: true,
     },
     onItemClick: {
-      type: Function as PropType<(item: Item) => void>,
+      type: Function as PropType<(item: MenuListItem) => void>,
       required: true,
     },
   },
   methods: {
-    handleClick(item: Item) {
+    handleClick(item: MenuListItem) {
       this.onItemClick(item)
     },
   },

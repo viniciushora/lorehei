@@ -1,11 +1,18 @@
 import { ref, nextTick } from 'vue'
 import { gsap } from 'gsap'
+import type { GsapModal } from '@/models/MeditationTool'
 
-export const showGsapModal = ref(false)
-export const modalRef = ref<HTMLElement | null>(null)
+const modalState: GsapModal = {
+  show: false,
+  ref: null
+}
+
+export const showGsapModal = ref(modalState.show)
+export const modalRef = ref<GsapModal['ref']>(modalState.ref)
 
 export function openModal() {
   showGsapModal.value = true
+
   nextTick(() => {
     if (modalRef.value) {
       gsap.set(modalRef.value, { display: 'flex', opacity: 0 })

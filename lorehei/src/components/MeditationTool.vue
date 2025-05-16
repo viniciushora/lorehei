@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { showGsapModal, modalRef, closeModal } from '@/components/MeditationTool'
+import { showGsapModal, modalRef, closeModal } from '@/logic/MeditationTool'
 </script>
 
 <style src="@/styles/MeditationTool.css"></style>

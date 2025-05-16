@@ -46,7 +46,7 @@
     </div>
 </template>
 
-<script lang="ts" src="@/components/MainCard.ts"></script>
+<script lang="ts" src="@/logic/MainCard.ts"></script>
 
 <style scoped src="@/styles/MainCard.css"></style>
   

@@ -11,6 +11,6 @@
   </ul>
 </template>
 
-<script lang="ts" src="@/components/MenuList.ts"></script>
+<script lang="ts" src="@/logic/MenuList.ts"></script>
 
 <style scoped src="@/styles/MenuList.css"></style>
