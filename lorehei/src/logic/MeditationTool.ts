@@ -1,6 +1,6 @@
 import { ref, nextTick } from 'vue'
 import { gsap } from 'gsap'
-import type { GsapModal } from '@/models/MeditationTool'
+import type { GsapModal } from '@/models'
 
 const modalState: GsapModal = {
   show: false,

@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 import MenuList from '@/components/MenuList.vue'
 import { useMainCardPosition } from '@/stores/useMainCardPosition'
-import type { MainCardItem } from '@/models/MainCard'
+import type { MainCardItem } from '@/models'
 
 export default defineComponent({
   name: 'MainCard',

@@ -1,5 +1,5 @@
 import { PropType, computed } from 'vue'
-import type { SideCardProps } from '@/models/SideCard'
+import type { SideCardProps } from '@/models'
 
 export const useCardProps = {
   title: {

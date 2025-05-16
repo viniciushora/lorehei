@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from 'vue'
-import type { MenuListItem } from '@/models/MenuList'
+import type { MenuListItem } from '@/models'
 
 export default defineComponent({
   name: 'MenuList',

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import { useCardProps, useSideCard } from '@/logic/SideCard'
 
 const props = defineProps(useCardProps)

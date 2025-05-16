@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import type { ImageModalState } from '@/models/ImageModal'
+import type { ImageModalState } from '@/models'
 
 export function useImageModal() {
   const state = ref<ImageModalState>({
