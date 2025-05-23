@@ -8,14 +8,6 @@
 
 body {
   min-height: 100vh;
-  background-image: url('./background.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  transition:
-    color 0.5s,
-    background-color 0.5s;
   line-height: 1.6;
   font-family:
     Inter,
@@ -34,28 +26,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, li, p {
-  color: #ffffff;
-}
-
-h1 {
-  font-size: clamp(40px, 2vw, 100px);
-}
-
-h2 {
-  font-size: clamp(15px, 0.8vw, 50px);
-}
-
-.cards-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5%;
-}
-
-.center-text {
-  text-align: center;
-  padding: 0;
 }

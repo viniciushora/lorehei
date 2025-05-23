@@ -1,9 +1,10 @@
+import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-const isAtTop = ref(false)
-const animationDone = ref(false)
+export const useMainCardPosition = defineStore('mainCardPosition', () => {
+  const isAtTop = ref(false)
+  const animationDone = ref(false)
 
-export function useMainCardPosition() {
   function moveMainCardToTopOnce() {
     if (!isAtTop.value) {
       isAtTop.value = true
@@ -26,4 +27,4 @@ export function useMainCardPosition() {
     finishAnimation,
     reset,
   }
-}
+})

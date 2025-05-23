@@ -1,11 +1,15 @@
-import { ref } from 'vue'
+import { defineStore } from 'pinia'
+import { ref, computed } from 'vue'
 import type { ImageModalState } from '@/models'
 
-export function useImageModal() {
+export const useImageModal = defineStore('imageModal', () => {
   const state = ref<ImageModalState>({
     show: false,
     src: null,
   })
+
+  const showImageModal = computed(() => state.value.show)
+  const modalImageSrc = computed(() => state.value.src)
 
   function openImageModal(src: string) {
     state.value.src = src
@@ -18,9 +22,11 @@ export function useImageModal() {
   }
 
   return {
-    showImageModal: state,
-    modalImageSrc: state.value.src,
+    state,
+    showImageModal,
+    modalImageSrc,
     openImageModal,
     closeImageModal,
   }
-}
+})
+

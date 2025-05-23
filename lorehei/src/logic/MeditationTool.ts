@@ -7,6 +7,13 @@ const modalState: GsapModal = {
   ref: null
 }
 
+export const useProps = {
+  sigil: {
+    type: String,
+    required: true,
+  }
+}
+
 export const showGsapModal = ref(modalState.show)
 export const modalRef = ref<GsapModal['ref']>(modalState.ref)
 
