@@ -50,3 +50,13 @@ img {
 .clickable-img:hover {
   transform: scale(1.02);
 }
+
+.fade-content-enter-active, .fade-content-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-content-enter-from, .fade-content-leave-to {
+  opacity: 0;
+}
+.fade-content-enter-to, .fade-content-leave-from {
+  opacity: 1;
+}

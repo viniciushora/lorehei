@@ -40,3 +40,17 @@ export function useSideCard(props: SideCardProps) {
     alignStyle,
   }
 }
+
+export function useSideCardContent(props: SideCardProps) {
+  const { handleClick, alignStyle } = useSideCard(props)
+
+  const contentKey = computed(() => 
+    `${props.title}-${props.image ?? ''}-${props.content}`
+  )
+
+  return {
+    handleClick,
+    alignStyle,
+    contentKey,
+  }
+}
