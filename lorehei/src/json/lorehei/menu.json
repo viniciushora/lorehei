@@ -1,6 +1,7 @@
 {
     "title": "LOREHEI",
-    "subtitle": "Boa companhia, sorte e alegria.",
+    "subtitlePt": "Boa companhia, sorte e alegria.",
+    "subtitleEn": "Good company, luck and joy.",
     "image": "/lorehei/lorehei.png",
     "sigil": "/lorehei/lorehei-sigilo-transparent.png",
     "background": "/lorehei/background.jpeg"

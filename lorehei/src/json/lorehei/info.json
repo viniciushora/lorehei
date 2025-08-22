@@ -1,43 +1,55 @@
 [
   {
     "id": 1,
-    "title": "DESCRIÇÃO",
-    "content": "<b>Lorehei</b> é um espírito elemental da água, com um corpo gracioso, chifres, cauda e asas. Sua presença traz companhia, sorte e alegria ao contratante.<br>Ela é uma excelente confidente, sempre disposta a conversar e oferecer conselhos. Sua energia tem o poder de elevar o estado de ânimo, proporcionando conforto e bem-estar. Além disso, pode ser evocada para favorecer a sorte em situações específicas ou em diferentes aspectos da vida.<br>De natureza amigável e suave, Lorehei não exige rituais complexos para ser evocada. Sua chamada pode ocorrer de maneira espontânea, a qualquer hora do dia e em qualquer lugar, tornando sua presença acessível sempre que desejado.<br>",
+    "titlePt": "DESCRIÇÃO",
+    "titleEn": "DESCRIPTION",
+    "contentPt": "<b>Lorehei</b> é um espírito elemental da água, com um corpo gracioso, chifres, cauda e asas. Sua presença traz companhia, sorte e alegria ao contratante.<br>Ela é uma excelente confidente, sempre disposta a conversar e oferecer conselhos. Sua energia tem o poder de elevar o estado de ânimo, proporcionando conforto e bem-estar. Além disso, pode ser evocada para favorecer a sorte em situações específicas ou em diferentes aspectos da vida.<br>De natureza amigável e suave, Lorehei não exige rituais complexos para ser evocada. Sua chamada pode ocorrer de maneira espontânea, a qualquer hora do dia e em qualquer lugar, tornando sua presença acessível sempre que desejado.<br>",
+    "contentEn": "<b>Lorehei</b> is a water elemental spirit, with a graceful body, horns, tail, and wings. Her presence brings companionship, luck, and joy to the summoner.<br>She is an excellent confidante, always willing to talk and offer advice. Her energy has the power to uplift the mood, providing comfort and well-being. Additionally, she can be summoned to favor luck in specific situations or various aspects of life.<br>With a friendly and gentle nature, Lorehei does not require complex rituals for summoning. Her call can happen spontaneously, at any time of day and in any place, making her presence accessible whenever desired.<br>",
     "image": "/lorehei/lorehei.png",
     "textAlign": "justify"
   },
   {
     "id": 2,
-    "title": "CARACTERÍSTICAS",
-    "content": "<b>Nome</b>: Lorehei<br><b>Aparência</b>: Uma mulher formosa de cabelos longos e com chifres, cauda e asas<br><b>Personalidade</b>: Bem intencionada, mas irreverente e despreocupada<br><b>Poderes</b>: Companhia, sorte e alegria<br><b>Tipo</b>: Espírito Elemental<br><b>Elemento</b>: Água<br><b>Energia</b>: Neutra tendendo para sutil<br><b>Incensos</b>: Mirra a sândalo<br><b>Cores</b>: Rosa, branco e vermelho<br>",
+    "titlePt": "CARACTERÍSTICAS",
+    "titleEn": "CHARACTERISTICS",
+    "contentPt": "<b>Nome</b>: Lorehei<br><b>Aparência</b>: Uma mulher formosa de cabelos longos e com chifres, cauda e asas<br><b>Personalidade</b>: Bem intencionada, mas irreverente e despreocupada<br><b>Poderes</b>: Companhia, sorte e alegria<br><b>Tipo</b>: Espírito Elemental<br><b>Elemento</b>: Água<br><b>Energia</b>: Neutra tendendo para sutil<br><b>Incensos</b>: Mirra a sândalo<br><b>Cores</b>: Rosa, branco e vermelho<br>",
+    "contentEn": "<b>Name</b>: Lorehei<br><b>Appearance</b>: A beautiful woman with long hair, horns, tail, and wings<br><b>Personality</b>: Well-intentioned, but irreverent and carefree<br><b>Powers</b>: Companionship, luck, and joy<br><b>Type</b>: Elemental Spirit<br><b>Element</b>: Water<br><b>Energy</b>: Neutral tending to subtle<br><b>Incenses</b>: Myrrh to sandalwood<br><b>Colors</b>: Pink, white, and red<br>",
     "image": "/lorehei/lorehei.png",
     "textAlign": "left"
   },
   {
     "id": 3,
-    "title": "ARQUÉTIPOS",
-    "content": "<b>Planeta</b>: Vênus<br><b>Tarot</b>: Força<br><b>Número</b>: 49<br><b>Sephiroth</b>: Tiphereth<br>",
+    "titlePt": "ARQUÉTIPOS",
+    "titleEn": "ARCHETYPES",
+    "contentPt": "<b>Planeta</b>: Vênus<br><b>Tarot</b>: Força<br><b>Número</b>: 49<br><b>Sephiroth</b>: Tiphereth<br>",
+    "contentEn": "<b>Planet</b>: Venus<br><b>Tarot</b>: Strength<br><b>Number</b>: 49<br><b>Sephiroth</b>: Tiphereth<br>",
     "image": "/lorehei/venus.png",
     "textAlign": "left"
   },
   {
     "id": 4,
-    "title": "FORMA DE ATIVAÇÃO",
-    "content": "Para ativar Lorehei, basta acender um incenso de mirra ou sândalo e entrar em um estado alterado de consciência por meio da meditação ou qualquer técnica de gnose. Em seguida, visualize seu sigilo, que se encontra acima.<br>A percepção de sua presença pode variar de acordo com sua capacidade de visualização. Alguns poderão vê-la no ambiente, enquanto outros sentirão sua energia ou uma sutil presença ao redor. Caso não perceba nada, não se preocupe — seus efeitos ainda estarão em ação.<br>Durante sua interação, você pode fazer um pedido ou simplesmente continuar a visualização do sigilo, absorvendo sua influência positiva para o ânimo e o bem-estar.<br>Você também pode utilizar a ferramenta de meditação clicando na caosfera girando ao lado como forma simplificada de ativação.",
+    "titlePt": "FORMA DE ATIVAÇÃO",
+    "titleEn": "ACTIVATION METHOD",
+    "contentPt": "Para ativar Lorehei, basta acender um incenso de mirra ou sândalo e entrar em um estado alterado de consciência por meio da meditação ou qualquer técnica de gnose. Em seguida, visualize seu sigilo, que se encontra acima.<br>A percepção de sua presença pode variar de acordo com sua capacidade de visualização. Alguns poderão vê-la no ambiente, enquanto outros sentirão sua energia ou uma sutil presença ao redor. Caso não perceba nada, não se preocupe,seus efeitos ainda estarão em ação.<br>Durante sua interação, você pode fazer um pedido ou simplesmente continuar a visualização do sigilo, absorvendo sua influência positiva para o ânimo e o bem-estar.<br>Você também pode utilizar a ferramenta de meditação clicando na caosfera girando ao lado como forma simplificada de ativação.",
+    "contentEn": "To activate Lorehei, simply light a myrrh or sandalwood incense and enter an altered state of consciousness through meditation or any gnosis technique. Then, visualize her sigil, which is located above.<br>The perception of her presence may vary according to your visualization ability. Some may see her in the environment, while others will feel her energy or a subtle presence around them. If you don't perceive anything, don't worry, her effects will still be in action.<br>During your interaction, you can make a request or simply continue visualizing the sigil, absorbing its positive influence for mood and well-being.<br>You can also use the meditation tool by clicking on the spinning chaosphere as a simplified activation method.",
     "image": "/lorehei/lorehei-sigilo.jpg",
     "textAlign": "justify"
   },
   {
     "id": 5,
-    "title": "ALIMENTAÇÃO",
-    "content": "Lorehei se alimenta de estados de presença e gratidão. Sua energia é sustentada por momentos de conexão genuína, quando você se permite mergulhar no agora e reconhecer sua influência sutil em sua vida.<br>Para alimentá-la, acenda um incenso de mirra ou sândalo — aromas que purificam o ambiente e favorecem a elevação espiritual. Em seguida, entre em um estado alterado de consciência por meio da meditação, da respiração consciente ou de qualquer técnica de gnose que o aproxime de sua essência.<br>Visualize seu sigilo com clareza, como se ele brilhasse suavemente diante de você. Emane sentimentos de gratidão, serenidade e alegria, pois são essas emoções que nutrem Lorehei e fortalecem seu vínculo com você. A cada respiração profunda, permita que a presença dela se intensifique — seja por imagens, sensações ou uma paz inexplicável no ambiente.<br>Você também pode utilizar a ferramenta de meditação clicando na caosfera girando ao lado como forma simplificada de alimentação.<br>",
+    "titlePt": "ALIMENTAÇÃO",
+    "titleEn": "CHARGING",
+    "contentPt": "Lorehei se alimenta de estados de presença e gratidão. Sua energia é sustentada por momentos de conexão genuína, quando você se permite mergulhar no agora e reconhecer sua influência sutil em sua vida.<br>Para alimentá-la, acenda um incenso de mirra ou sândalo, aromas que purificam o ambiente e favorecem a elevação espiritual. Em seguida, entre em um estado alterado de consciência por meio da meditação, da respiração consciente ou de qualquer técnica de gnose que o aproxime de sua essência.<br>Visualize seu sigilo com clareza, como se ele brilhasse suavemente diante de você. Emane sentimentos de gratidão, serenidade e alegria, pois são essas emoções que nutrem Lorehei e fortalecem seu vínculo com você. A cada respiração profunda, permita que a presença dela se intensifique, seja por imagens, sensações ou uma paz inexplicável no ambiente.<br>Você também pode utilizar a ferramenta de meditação clicando na caosfera girando ao lado como forma simplificada de alimentação.<br>",
+    "contentEn": "Lorehei feeds on states of presence and gratitude. Her energy is sustained by moments of genuine connection, when you allow yourself to immerse in the now and recognize her subtle influence in your life.<br>To feed her, light a myrrh or sandalwood incense, aromas that purify the environment and favor spiritual elevation. Then, enter an altered state of consciousness through meditation, conscious breathing, or any gnosis technique that brings you closer to your essence.<br>Visualize her sigil clearly, as if it glows softly before you. Radiate feelings of gratitude, serenity, and joy, as these emotions nourish Lorehei and strengthen your bond with her. With each deep breath, allow her presence to intensify, whether through images, sensations, or an inexplicable peace in the environment.<br>You can also use the meditation tool by clicking on the spinning chaosphere as a simplified feeding method.<br>",
     "image": null,
     "textAlign": "justify"
   },
   {
     "id": 6,
-    "title": "BANIMENTO",
-    "content": "Para banir Lorehei, basta a agradecer por seus serviços e dar-lhe a permissão para se retirar do local. Caso o contratante sinta necessidade, pode realizar o banimento de sua preferência.",
+    "titlePt": "BANIMENTO",
+    "titleEn": "BANISHMENT",
+    "contentPt": "Para banir Lorehei, basta a agradecer por seus serviços e dar-lhe a permissão para se retirar do local. Caso o contratante sinta necessidade, pode realizar o banimento de sua preferência.",
+    "contentEn": "To banish Lorehei, simply thank her for her services and give her permission to leave the location. If the summoner feels the need, they can perform their preferred banishment method.",
     "image": null,
     "textAlign": "justify"
   }

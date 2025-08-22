@@ -1,4 +1,3 @@
-<!-- src/components/ImageModal.vue -->
 <template>
   <transition name="fade">
     <div v-if="visible" class="modal-overlay" @click.self="onClose">

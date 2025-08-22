@@ -5,7 +5,7 @@ import MenuList from '@/components/MenuList.vue'
 const props = defineProps(useMainCardProps)
 const emit = defineEmits(['itemSelected', 'chaosphereClick'])
 
-const { itemClick, chaosphereClicked, itens } = useMainCard(emit)
+const { itemClick, chaosphereClicked, itensPt, itensEn } = useMainCard(emit)
 </script>
 
 <template>
@@ -39,7 +39,7 @@ const { itemClick, chaosphereClicked, itens } = useMainCard(emit)
       <div class="container-fluid list-container">
         <div class="row">
           <div class="col-md-12 p-0">
-            <MenuList :itens="itens" :onItemClick="itemClick" />
+            <MenuList :itens="props.lang === 'pt' ? itensPt : itensEn" :onItemClick="itemClick" />
           </div>
         </div>
       </div>

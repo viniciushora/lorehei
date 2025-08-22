@@ -29,3 +29,16 @@ h2 {
   text-align: center;
   padding: 0;
 }
+
+.language-picker-col {
+  padding-top: 5%;
+  margin-bottom: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container-fluid {
+  display: block;
+  width: 100%;
+}

@@ -3,15 +3,22 @@ import { ref } from 'vue'
 import { openModal } from '@/logic/MeditationTool'
 import { useImageModal } from '@/stores/useImageModal'
 import type { SideCardData, MainCardData, ServantItem, ServantDataMap } from '@/models/ServantPageView'
+import { useLanguageStore } from '@/stores/useLanguageStore'
+import { computed } from 'vue'
 
 export const useServantPageView = defineStore('servantPageView', () => {
+    const languageStore = useLanguageStore()
   
     const showSideCard = ref(false)
     const selectedItemId = ref<number | null>(null)
 
     const sideCardData = ref<SideCardData>({
         title: '',
+        titlePt: '',
+        titleEn: '',
         content: '',
+        contentPt: '',
+        contentEn: '',
         image: null,
         textAlign: '',
     })
@@ -19,6 +26,8 @@ export const useServantPageView = defineStore('servantPageView', () => {
     const mainCardData = ref<MainCardData>({
         title: '',
         subtitle: '',
+        subtitlePt: '',
+        subtitleEn: '',
         image: '',
         sigil: '',
         background: '',
@@ -31,12 +40,34 @@ export const useServantPageView = defineStore('servantPageView', () => {
 
     const imageModal = useImageModal()
 
+    const mainCard = computed(() => ({
+        ...mainCardData.value,
+        subtitle: languageStore.currentLanguage === 'pt' 
+            ? mainCardData.value.subtitlePt 
+            : mainCardData.value.subtitleEn
+    }))
+
+    const sideCard = computed(() => {
+        if (selectedItemId.value === null) return sideCardData.value
+        const item = dataMap.value[selectedItemId.value]
+        if (!item) return sideCardData.value
+        return {
+            ...sideCardData.value,
+            title: languageStore.currentLanguage === 'pt' ? item.titlePt : item.titleEn,
+            content: languageStore.currentLanguage === 'pt' ? item.contentPt : item.contentEn,
+        }
+    })
+
     function loadServantData(data: ServantItem[]) {
         const map: ServantDataMap = {}
         data.forEach(item => {
         map[item.id] = {
-            title: item.title,
-            content: item.content,
+            title: '',
+            titlePt: item.titlePt,
+            titleEn: item.titleEn,
+            content: '',
+            contentPt: item.contentPt,
+            contentEn: item.contentEn,
             image: item.image,
             textAlign: item.textAlign,
         }
@@ -82,8 +113,12 @@ export const useServantPageView = defineStore('servantPageView', () => {
 
         const item = dataMap.value[itemId]
         sideCardData.value = item || {
-            title: 'Erro',
-            content: 'Item não encontrado.',
+            title: '',
+            titlePt: 'Erro',
+            titleEn: 'Error',
+            content: '',
+            contentPt: 'Item não encontrado.',
+            contentEn: 'Item not found.',
             image: null,
             textAlign: 'left',
         }
@@ -101,6 +136,10 @@ export const useServantPageView = defineStore('servantPageView', () => {
         openModal()
     }
 
+    function updateLanguage(lang: string) {
+        languageStore.setLanguage(lang)
+    }
+
     return {
         showSideCard,
         selectedItemId,
@@ -115,5 +154,8 @@ export const useServantPageView = defineStore('servantPageView', () => {
         loadServantMenuFromJson,
         isLoading,
         loadError,
+        updateLanguage,
+        mainCard,
+        sideCard,
     }
 })

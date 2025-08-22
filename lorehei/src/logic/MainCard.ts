@@ -14,6 +14,10 @@ export const useMainCardProps = {
     type: String,
     required: true,
   },
+  lang: {
+    type: String,
+    required: true,
+  },
 }
 
 export function useMainCard(emit: (event: string, ...args: any[]) => void) {
@@ -28,7 +32,7 @@ export function useMainCard(emit: (event: string, ...args: any[]) => void) {
     emit('chaosphereClick')
   }
 
-  const itens: MainCardItem[] = [
+  const itensPt: MainCardItem[] = [
     { id: 1, name: 'Descrição' },
     { id: 2, name: 'Características' },
     { id: 3, name: 'Arquétipos' },
@@ -37,9 +41,19 @@ export function useMainCard(emit: (event: string, ...args: any[]) => void) {
     { id: 6, name: 'Banimento' },
   ]
 
+  const itensEn: MainCardItem[] = [
+    { id: 1, name: 'Description' },
+    { id: 2, name: 'Characteristics' },
+    { id: 3, name: 'Archetypes' },
+    { id: 4, name: 'Activation Method' },
+    { id: 5, name: 'Charging' },
+    { id: 6, name: 'Banishment' },
+  ]
+
   return {
     itemClick,
     chaosphereClicked,
-    itens,
+    itensPt,
+    itensEn,
   }
 }

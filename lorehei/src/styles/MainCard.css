@@ -1,7 +1,5 @@
 .main-card {
-    width: 21vw;
-    max-width: 640px;
-    height: auto;
+    width: clamp(400px, 21vw, 705px);
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 2%;

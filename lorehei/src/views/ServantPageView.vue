@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, watch } from 'vue'
 import { useBackgroundStore } from '@/stores/useBackgroundStore'
+import { useLanguageStore } from '@/stores/useLanguageStore'
 import { useServantPageView } from '@/stores/useServantPageView'
 
 import MainCard from '@/components/MainCard.vue'
 import SideCard from '@/components/SideCard.vue'
 import MeditationTool from '@/components/MeditationTool.vue'
 import ImageModal from '@/components/ImageModal.vue'
+import LanguagePicker from '@/components/LanguagePicker.vue'
 
 const props = defineProps<{
   jsonName: string
@@ -14,6 +16,14 @@ const props = defineProps<{
 
 const servantPageView = useServantPageView()
 const backgroundStore = useBackgroundStore()
+const languageStore = useLanguageStore()
+
+watch(
+  () => languageStore.currentLanguage,
+  (lang) => {
+    servantPageView.updateLanguage(lang)
+  }
+)
 
 onMounted(() => {
   servantPageView.loadServantInfoFromJson(props.jsonName)
@@ -41,26 +51,39 @@ onUnmounted(() => {
   backgroundStore.clearBackground()
   document.body.style.backgroundImage = ''
 })
+
+console.log(languageStore.currentLanguage);
 </script>
 
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-11 col-lg-11"></div>
+      <div class="col-md-1 col-lg-1">
+        <div class="language-picker-col">
+          <LanguagePicker></LanguagePicker>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
         <div class="cards-container">
           <MainCard
             @itemSelected="servantPageView.handleItemSelected"
             @chaosphereClick="servantPageView.openChaosphereModal"
-            :title="servantPageView.mainCardData.title"
-            :subtitle="servantPageView.mainCardData.subtitle"
-            :image="servantPageView.mainCardData.image"
+            :title="servantPageView.mainCard.title"
+            :subtitle="servantPageView.mainCard.subtitle"
+            :image="servantPageView.mainCard.image"
+            :lang="languageStore.currentLanguage"
           />
           <SideCard
             v-if="servantPageView.showSideCard"
-            :title="servantPageView.sideCardData.title"
-            :content="servantPageView.sideCardData.content"
-            :image="servantPageView.sideCardData.image"
-            :textAlign="servantPageView.sideCardData.textAlign"
+            :title="servantPageView.sideCard.title"
+            :content="servantPageView.sideCard.content"
+            :image="servantPageView.sideCard.image"
+            :textAlign="servantPageView.sideCard.textAlign"
             :onImageClick="servantPageView.imageModal.openImageModal"
           />
         </div>
