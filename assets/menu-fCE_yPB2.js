@@ -1,0 +1,1 @@
+const o="LOREHEI",e="Boa companhia, sorte e alegria.",t="Good company, luck and joy.",n="/lorehei/lorehei.png",i="/lorehei/lorehei-sigilo-transparent.png",a="/lorehei/background.jpeg",s={title:o,subtitlePt:e,subtitleEn:t,image:n,sigil:i,background:a};export{a as background,s as default,n as image,i as sigil,t as subtitleEn,e as subtitlePt,o as title};
